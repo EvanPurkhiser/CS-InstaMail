@@ -11,4 +11,6 @@
 @interface InstaMailViewController : UIViewController
 <UIPickerViewDataSource, UIPickerViewDelegate>
 
+-(IBAction)sendEmail:(id)sender;
+
 @end

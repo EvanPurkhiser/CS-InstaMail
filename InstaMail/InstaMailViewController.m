@@ -43,4 +43,9 @@
     return [(NSArray *) [_actionsAndFeelings objectAtIndex:component] objectAtIndex:row];
 }
 
+- (IBAction)sendEmail:(id)sender
+{
+    NSLog(@"Send email now!");
+}
+
 @end
