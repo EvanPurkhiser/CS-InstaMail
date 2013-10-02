@@ -9,6 +9,9 @@
 #import "InstaMailViewController.h"
 
 @interface InstaMailViewController ()
+{
+    NSMutableDictionary *_actionsAndFeelings;
+}
 
 @end
 
@@ -17,7 +20,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    // Load the actions and feelings data
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"ActionsAndFeelings" ofType:@"plist"];
+    _actionsAndFeelings = [NSMutableDictionary dictionaryWithContentsOfFile:plistPath];
 }
 
 - (void)didReceiveMemoryWarning
