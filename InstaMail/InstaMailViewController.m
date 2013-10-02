@@ -45,7 +45,14 @@
 
 - (IBAction)sendEmail:(id)sender
 {
-    NSLog(@"Send email now!");
+    NSArray *actions  = [_actionsAndFeelings objectAtIndex:0];
+    NSArray *feelings = [_actionsAndFeelings objectAtIndex:1];
+
+    NSString *emailMessage = [NSString stringWithFormat:@"I'm %@ and feeling %@ about it!",
+                              [actions  objectAtIndex:[self.actionAndFeelingPicker selectedRowInComponent:0]],
+                              [feelings objectAtIndex:[self.actionAndFeelingPicker selectedRowInComponent:1]]];
+
+    NSLog(@"%@", emailMessage);
 }
 
 @end

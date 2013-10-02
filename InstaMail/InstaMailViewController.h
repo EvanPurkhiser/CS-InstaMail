@@ -11,6 +11,8 @@
 @interface InstaMailViewController : UIViewController
 <UIPickerViewDataSource, UIPickerViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UIPickerView *actionAndFeelingPicker;
+
 -(IBAction)sendEmail:(id)sender;
 
 @end

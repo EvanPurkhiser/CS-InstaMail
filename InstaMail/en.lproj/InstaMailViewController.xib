@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InstaMailViewController">
             <connections>
+                <outlet property="actionAndFeelingPicker" destination="MVP-4U-zfm" id="Whm-oP-bUx"/>
                 <outlet property="view" destination="6" id="7"/>
             </connections>
         </placeholder>
