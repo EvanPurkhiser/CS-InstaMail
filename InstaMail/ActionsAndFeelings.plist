@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Actions</key>
+	<array>
+		<string>sleeping</string>
+		<string>eating</string>
+		<string>working</string>
+		<string>thinking</string>
+		<string>crying</string>
+		<string>begging</string>
+		<string>leaving</string>
+		<string>shopping</string>
+	</array>
+	<key>Feelings</key>
+	<array>
+		<string>awesome</string>
+		<string>sad</string>
+		<string>happy</string>
+		<string>ambivalent</string>
+		<string>nauseous</string>
+		<string>psyched</string>
+		<string>confused</string>
+		<string>hopeful</string>
+		<string>anxious</string>
+	</array>
+</dict>
+</plist>
