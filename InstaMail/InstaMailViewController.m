@@ -10,7 +10,7 @@
 
 @interface InstaMailViewController ()
 {
-    NSMutableDictionary *_actionsAndFeelings;
+    NSArray *_actionsAndFeelings;
 }
 
 @end
@@ -23,13 +23,24 @@
 
     // Load the actions and feelings data
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"ActionsAndFeelings" ofType:@"plist"];
-    _actionsAndFeelings = [NSMutableDictionary dictionaryWithContentsOfFile:plistPath];
+    NSDictionary *plist = [NSDictionary dictionaryWithContentsOfFile:plistPath];
+
+    _actionsAndFeelings = @[[plist valueForKey:@"Actions"], [plist valueForKey:@"Feelings"]];
 }
 
-- (void)didReceiveMemoryWarning
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    return _actionsAndFeelings.count;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return ((NSArray *) [_actionsAndFeelings objectAtIndex:component]).count;
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    return [(NSArray *) [_actionsAndFeelings objectAtIndex:component] objectAtIndex:row];
 }
 
 @end
