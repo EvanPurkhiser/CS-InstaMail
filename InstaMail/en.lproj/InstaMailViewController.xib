@@ -84,7 +84,7 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" returnKeyType="done"/>
                     <connections>
-                        <action selector="noteDone:" destination="-1" eventType="editingDidEndOnExit" id="kG5-6e-C8d"/>
+                        <action selector="noteDone:" destination="-1" eventType="editingDidEndOnExit" id="PHJ-2A-nS9"/>
                     </connections>
                 </textField>
             </subviews>

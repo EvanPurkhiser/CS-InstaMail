@@ -45,7 +45,7 @@
 
 - (IBAction)noteDone:(id)sender
 {
-    NSLog(@"Note done1");
+    [sender resignFirstResponder];
 }
 
 - (IBAction)sendEmail:(id)sender
