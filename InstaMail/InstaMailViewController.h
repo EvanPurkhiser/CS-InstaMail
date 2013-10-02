@@ -15,4 +15,6 @@
 
 -(IBAction)sendEmail:(id)sender;
 
+-(IBAction)noteDone:(id)sender;
+
 @end

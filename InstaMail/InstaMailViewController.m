@@ -43,6 +43,11 @@
     return [(NSArray *) [_actionsAndFeelings objectAtIndex:component] objectAtIndex:row];
 }
 
+- (IBAction)noteDone:(id)sender
+{
+    NSLog(@"Note done1");
+}
+
 - (IBAction)sendEmail:(id)sender
 {
     NSArray *actions  = [_actionsAndFeelings objectAtIndex:0];
